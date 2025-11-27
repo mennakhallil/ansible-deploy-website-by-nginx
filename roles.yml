@@ -1,0 +1,5 @@
+- name: configuration nginx
+  hosts: server
+  become: true
+  roles:
+    - deploy-website
