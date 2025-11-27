@@ -5,15 +5,3 @@
     dest: /tmp/install_packages.txt
   become: true
 
-#- name: install_packages
- # apt:
-  #  name: "{{ item }}"
-   # state: present
-    #update_cache: yes
-  #loop: "{{ install_packages }}"
-  #become: true
-  register: apt_update_result
-  #when: install_package is defined
-- name: debug and print output
-  debug:
-   msg: "{{ apt_update_result }}"

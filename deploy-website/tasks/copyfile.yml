@@ -1,7 +1,0 @@
-- name: copy file
-  copy:
-    src: /home/copyfile
-    dest: /home/
-    owner: ubuntu1
-    group: ubuntu1
-    mode: '0755'

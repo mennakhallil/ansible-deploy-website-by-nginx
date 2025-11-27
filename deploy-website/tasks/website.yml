@@ -2,8 +2,8 @@
   copy:
     src: /home/ansible/roles/deploy-website/files/website/
     dest: /var/www/html/website/
-    owner: ubuntu1
-    group: ubuntu1
+    owner: ubuntu
+    group: ubuntu
     mode: '0755'
 
 - name: copy setup script
@@ -11,8 +11,8 @@
     src: /home/ansible/roles/deploy-website/files/script.sh
     dest: /tmp/scripts.sh
     mode: '0777'
-    owner: ubuntu1
-    group: ubuntu1
+    owner: ubuntu
+    group: ubuntu
 
 - name: run script
   shell: /tmp/scripts.sh
