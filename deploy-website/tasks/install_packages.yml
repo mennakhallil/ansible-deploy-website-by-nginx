@@ -1,7 +1,0 @@
----
-- name: Set install packages variable
-  template:
-    src: main.j2
-    dest: /tmp/install_packages.txt
-  become: true
-
